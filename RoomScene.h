@@ -12,6 +12,7 @@
 @property(nonatomic) CCSprite *foreground;
 @property(nonatomic) CCSprite *hud;
 
-@property (nonatomic) CCNodeGradient *timer;
+@property (nonatomic) CCSprite *circleSprite;
 @property (nonatomic) CCNodeGradient *cool;
+@property(nonatomic, strong) CCProgressNode *timer;
 @end

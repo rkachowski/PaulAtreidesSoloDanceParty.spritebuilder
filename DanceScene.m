@@ -10,6 +10,7 @@ static const int TIME_LIMIT = 5;
     int _timeLimit;
     float _timeElapsed;
     int _danceScore;
+    CCProgressNode *_timer;
 }
 
 - (void)onEnter
@@ -33,7 +34,14 @@ static const int TIME_LIMIT = 5;
     _timeLimit = TIME_LIMIT;
     _timeElapsed = 0;
 
-    _timer.scaleY = 0;
+    _timer = [[CCProgressNode alloc] initWithSprite:_circleSprite];
+    _timer.position = _circleSprite.position;
+    [_circleSprite.parent addChild:_timer z:-10];
+    [_circleSprite removeFromParent];
+
+
+
+//    _timer.scaleY = 0;
     _cool.scaleY = 0;
     _danceScore = 0;
     if ([[GameConfig sharedConfig] getValueForKey:@"funk"])
@@ -94,7 +102,7 @@ static const int TIME_LIMIT = 5;
 {
     _timeElapsed += delta;
 
-    _timer.scaleY = 0.598 *( _timeElapsed / _timeLimit);
+    _timer.percentage = 100 * ( _timeElapsed / _timeLimit);
 
     if(_timeElapsed >= _timeLimit)
     {

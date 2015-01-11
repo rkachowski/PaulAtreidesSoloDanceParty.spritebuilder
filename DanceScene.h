@@ -12,7 +12,7 @@
 
 @property (nonatomic) CCSprite *player;
 
-@property (nonatomic) CCNodeGradient *timer;
+@property (nonatomic) CCSprite *circleSprite;
 @property (nonatomic) CCNodeGradient *cool;
 
 @end

@@ -17,6 +17,7 @@ static const int TIME_LIMIT = 5;
 
     int _timeLimit;
     float _timeElapsed;
+    CCProgressNode *_timer;
 }
 
 - (id)init
@@ -26,6 +27,8 @@ static const int TIME_LIMIT = 5;
     {
         self.userInteractionEnabled = TRUE;
     }
+
+
 
     return self;
 }
@@ -45,7 +48,6 @@ static const int TIME_LIMIT = 5;
     _timeLimit = TIME_LIMIT;
     _timeElapsed = 0;
 
-    _timer.scaleY = 0;
     _cool.scaleY = 0;
 
     if ([[GameConfig sharedConfig] getValueForKey:@"funk"])
@@ -72,6 +74,8 @@ static const int TIME_LIMIT = 5;
     [self setup];
 }
 
+
+
 - (void)removeRoomObject:(CCNode *)toRemove
 {
     [toRemove removeFromParent];
@@ -87,6 +91,11 @@ static const int TIME_LIMIT = 5;
 - (void)setup
 {
     if (_setup) return;
+
+    _timer = [[CCProgressNode alloc] initWithSprite:_circleSprite];
+    _timer.position = _circleSprite.position;
+    [_circleSprite.parent addChild:_timer z:-10];
+    [_circleSprite removeFromParent];
 
     _setup = YES;
 }
@@ -128,7 +137,7 @@ static const int TIME_LIMIT = 5;
 
     _timeElapsed += delta;
 
-    _timer.scaleY = 0.598 *( _timeElapsed / _timeLimit);
+    _timer.percentage = 100 * ( _timeElapsed / _timeLimit);
 
     if(_timeElapsed >= _timeLimit)
     {

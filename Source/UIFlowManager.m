@@ -52,8 +52,8 @@ static UIFlowManager *__sharedManager;
 
     _uiFlow = @{
             @"MainScene" : @{
-//                    @"play" : @"RoomScene"
-                    @"play" : @"WinScene"
+                    @"play" : @"RoomScene"
+//                    @"play" : @"WinScene"
             },
             @"RoomScene" : @{
                     @"dance" : @"DanceScene",

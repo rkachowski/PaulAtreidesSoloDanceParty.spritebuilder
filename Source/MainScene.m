@@ -13,12 +13,15 @@
     dispatch_once(&onceToken, ^{
        [self setupGame];
     });
+
+    [[OALSimpleAudio sharedInstance] playEffect:@"walkwithout.wav"];
 }
 
 - (void)setupGame
 {
     [UIFlowManager sharedManager]; //force ui construction
     [[OALSimpleAudio sharedInstance] playBg:@"getup.wav" loop:YES];
+
 }
 
 
