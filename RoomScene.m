@@ -30,9 +30,8 @@ static const int TIME_LIMIT = 5;
     return self;
 }
 
-- (void)onEnter
+- (void)onEnterTransitionDidFinish
 {
-    [super onEnter];
     _doCollisions = YES;
 
     _animationTimer = 0;

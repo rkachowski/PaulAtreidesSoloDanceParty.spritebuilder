@@ -62,7 +62,8 @@ static UIFlowManager *__sharedManager;
             @"DanceScene" : @{
                     @"pop" : ^()
                     {
-                        [[CCDirector sharedDirector] popScene];
+                        [[CCDirector sharedDirector] popSceneWithTransition:
+                                [CCTransition transitionMoveInWithDirection:CCTransitionDirectionRight duration:0.2]];
                     },
                     @"die" : @"GameOverScene"
             },
@@ -104,7 +105,8 @@ static UIFlowManager *__sharedManager;
         {
 
             CCScene *nextScene = [CCBReader loadAsScene:flowForScene[message]];
-            [[CCDirector sharedDirector] pushScene:nextScene];
+            [[CCDirector sharedDirector] pushScene:nextScene withTransition:
+                    [CCTransition transitionMoveInWithDirection:CCTransitionDirectionLeft duration:0.2]];
 
         }
     }
