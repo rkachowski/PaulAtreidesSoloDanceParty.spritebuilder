@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:label="PaulAtreides"
-        android:debuggable="false"
+        android:debuggable="true"
         android:icon="@drawable/ic_launcher">
         <activity   
             android:name="org.cocos2d.PaulAtreides.PaulAtreidesActivity"
