@@ -54,8 +54,6 @@
     
     [self setupCocos2dWithOptions:cocos2dSetup];
 
-    [[OALSimpleAudio sharedInstance] playBg:@"getup.wav" loop:YES];
-
     return YES;
 }
 

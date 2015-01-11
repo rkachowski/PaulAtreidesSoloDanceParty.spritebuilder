@@ -39,6 +39,8 @@
 		14EEF13E1A61BCBE00CF4E58 /* getup.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF13D1A61BCBE00CF4E58 /* getup.wav */; };
 		14EEF13F1A61BCBE00CF4E58 /* getup.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF13D1A61BCBE00CF4E58 /* getup.wav */; };
 		14EEF1411A61C0DF00CF4E58 /* CCNode+UIFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C39F21D8225A9133A75D6A /* CCNode+UIFlow.m */; };
+		14FB8BC01A62DBBD0012E7F3 /* muaddib.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14FB8BBF1A62DBBD0012E7F3 /* muaddib.wav */; };
+		14FB8BC11A62DBBD0012E7F3 /* muaddib.wav in Resources */ = {isa = PBXBuildFile; fileRef = 14FB8BBF1A62DBBD0012E7F3 /* muaddib.wav */; };
 		5B12100C19748281004C1E1D /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12100B19748281004C1E1D /* BridgeKitV3.framework */; };
 		5B121029197484DA004C1E1D /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12100B19748281004C1E1D /* BridgeKitV3.framework */; };
 		5B12102A197484DD004C1E1D /* PaulAtreidesActivity.java in Sources */ = {isa = PBXBuildFile; fileRef = 5B12101B19748413004C1E1D /* PaulAtreidesActivity.java */; };
@@ -224,6 +226,7 @@
 		14EEF1151A6198AC00CF4E58 /* walk1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk1.png; sourceTree = "<group>"; };
 		14EEF1161A6198AC00CF4E58 /* walk2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk2.png; sourceTree = "<group>"; };
 		14EEF13D1A61BCBE00CF4E58 /* getup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = getup.wav; sourceTree = "<group>"; };
+		14FB8BBF1A62DBBD0012E7F3 /* muaddib.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = muaddib.wav; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100B19748281004C1E1D /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -636,6 +639,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14FB8BBF1A62DBBD0012E7F3 /* muaddib.wav */,
 				14EEF13D1A61BCBE00CF4E58 /* getup.wav */,
 				14EEF10F1A6198AC00CF4E58 /* dancemove1.png */,
 				14EEF1101A6198AC00CF4E58 /* dancemove2.png */,
@@ -867,6 +871,7 @@
 				927F61AE196C771E000F43EF /* Default@2x.png in Resources */,
 				14EEF1211A6198AC00CF4E58 /* topdown-stone1.png in Resources */,
 				927F61AF196C771E000F43EF /* iPad@2x.png in Resources */,
+				14FB8BC11A62DBBD0012E7F3 /* muaddib.wav in Resources */,
 				14EEF12D1A6198AC00CF4E58 /* walk2.png in Resources */,
 				927F61B0196C771E000F43EF /* iPad.png in Resources */,
 				927F61B1196C771E000F43EF /* iPad-old@2x.png in Resources */,
@@ -899,6 +904,7 @@
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				14EEF1201A6198AC00CF4E58 /* topdown-stone1.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
+				14FB8BC01A62DBBD0012E7F3 /* muaddib.wav in Resources */,
 				14EEF12C1A6198AC00CF4E58 /* walk2.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,

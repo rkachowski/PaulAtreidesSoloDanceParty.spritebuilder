@@ -18,6 +18,10 @@
     _winText.string = [NSString stringWithFormat:@"you cut %d sweet moves!", intScore];
 }
 
+- (void)onEnterTransitionDidFinish
+{
+    [[OALSimpleAudio sharedInstance] playEffect:@"muaddib.wav"];
+}
 
 - (void) onButton
 {
